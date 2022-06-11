@@ -1,0 +1,395 @@
+#header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  /* display: flex;
+  justify-content: space-between; */
+  height: 46px;
+  background-color: var(--black-color);
+
+  z-index: 1;
+  /* overflow: hidden; */
+}
+
+.nav {
+  display: inline-block;
+}
+
+.nav-list {
+  /* position: relative;
+  display: flex;
+  list-style: none; */
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item:hover .nav-item-link {
+  background-color: var(--hover-btn-color);
+  color: var(--black-color);
+}
+
+.nav-item:hover .nav__subnav {
+  display: block;
+}
+
+.nav-item-link {
+  display: block;
+  padding: 0 24px;
+
+  color: var(--white-color);
+
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 46px;
+}
+
+.nav__subnav {
+  position: absolute;
+
+  display: none;
+  min-width: 160px;
+
+  background-color: var(--white-color);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  list-style: none;
+}
+
+.nav__subnav-item:hover {
+  background-color: var(--hover-btn-color);
+}
+
+.nav__subnav-item-link {
+  display: block;
+  padding: 8px 16px;
+
+  color: var(--black-color);
+
+  font-size: 1.5rem;
+  text-decoration: none;
+  line-height: 1.5;
+}
+.header__mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.header__search-btn,
+.header__mobile-menu-btn {
+  float: right;
+  padding: 0 24px;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  line-height: 46px;
+}
+
+.header__search-btn:hover {
+  background-color: var(--main-red-color);
+  cursor: pointer;
+}
+
+.header__mobile-menu-btn:hover {
+  background-color: var(--hover-btn-color);
+  color: var(--black-color);
+}
+
+/* Slider */
+
+.slider {
+  position: relative;
+  background: url("../img/slider/la.jpg") top center / cover no-repeat;
+  margin-top: 46px;
+  padding-top: 50%;
+}
+
+.slider__content {
+  position: absolute;
+  bottom: 47px;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+.slider__title {
+  color: var(--white-color);
+
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.slider__subtitle {
+  color: var(--white-color);
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.band__content {
+  margin: 15px 0;
+
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.band__member-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.band__member-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.band__member-name {
+  margin: 15px 0;
+  font-size: 1.5rem;
+  /* text-align: center; */
+}
+
+.band__member-img {
+  width: 154px;
+  /* height: 154px; */
+  margin-bottom: 15px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+#tour {
+  width: 100%;
+  background-color: var(--black-color);
+}
+
+.tour__ticket-list {
+  margin-top: 35px;
+
+  background-color: var(--white-color);
+  list-style: none;
+}
+
+.tour__ticket-item {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+
+  color: #757575;
+
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.tour__sold-out {
+  padding: 2px 8px;
+  margin-left: 10px;
+
+  background-color: var(--main-red-color);
+  color: var(--white-color);
+}
+
+.tour__ticket-quantity {
+  float: right;
+  padding: 0px 8px;
+  margin-right: 16px;
+
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border-radius: 50%;
+}
+
+.tour__place-list {
+  padding: 16px 0;
+}
+
+.tour__place-item {
+  margin-top: 16px;
+}
+
+.tour__place-img {
+  display: block;
+  width: 100%;
+}
+
+.place-info {
+  padding: 0 16px;
+
+  background-color: var(--white-color);
+}
+
+.place-info__name {
+  padding-top: 15px;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.place-info__date {
+  margin-top: 15px;
+
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+
+.place-info__address {
+  margin: 15px 0;
+
+  font-size: 1.5rem;
+}
+
+.contact__list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact__info-list {
+  list-style: none;
+}
+
+.contact__info-item {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.contact__info-item i {
+  margin-right: 16px;
+  font-size: 1.4rem;
+}
+
+.contact__form {
+  margin-bottom: 16px;
+}
+
+.contact__form-input {
+  padding: 11px 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.contact__submit-btn {
+  float: right;
+}
+
+.map {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(50%);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 64px 16px;
+}
+
+.footer__icon-list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.footer__icon-list i {
+  margin-right: 8px;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.footer__icon-list i:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.footer__copyright {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.ticket-form {
+  position: relative;
+  max-width: 900px;
+  max-width: calc(100% - 32px);
+  background-color: var(--white-color);
+}
+
+.ticket-form__close-btn {
+  float: right;
+  top: 0;
+  right: 0;
+
+  color: var(--white-color);
+
+  font-size: 1.8rem;
+  padding: 14px 15px;
+}
+
+.ticket-form__close-btn:hover {
+  background-color: var(--hover-btn-color);
+  cursor: pointer;
+}
+
+.ticket-form__header {
+  height: 129px;
+
+  background-color: #009688;
+  color: var(--white-color);
+  font-size: 3rem;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.ticket-form__ticket-icon {
+  margin: 50px 20px 0 0;
+}
+
+.ticket-form__body {
+  padding: 0 16px;
+}
+
+.ticket-form__lable {
+  display: block;
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.ticket-form__input {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+}
+
+.ticket-form__pay-btn {
+  width: 100%;
+  padding: 18px 10px;
+  margin: 16px 0;
+
+  background-color: #009688;
+  color: var(--white-color);
+  border: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.ticket-form__help {
+  padding: 16px 0 32px;
+
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+.ticket-form__help a {
+  color: #2196f3;
+}
